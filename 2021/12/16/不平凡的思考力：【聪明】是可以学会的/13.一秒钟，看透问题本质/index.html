@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="上节课我们讲了一个分析问题的方法，叫做：透析三棱镜。以及，介绍了它的第一个步骤：校准目标。 这节课，我们继续讲后面两步。 透析三棱镜的第二步是：重构方法。 第二步：重构方法 上节课我们说过，当出现了问题，我们习惯性的会从现状出发，去寻找一个能实现目标的方法，但结果往往会治标不治本，就好比你发烧的时候，如果直接把冰袋敷在头上，那么看上去是把体温降下来了，但因为本质的问题，也就是细菌感染并没有解决，所">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/13.%E4%B8%80%E7%A7%92%E9%92%9F%EF%BC%8C%E7%9C%8B%E9%80%8F%E9%97%AE%E9%A2%98%E6%9C%AC%E8%B4%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="上节课我们讲了一个分析问题的方法，叫做：透析三棱镜。以及，介绍了它的第一个步骤：校准目标。 这节课，我们继续讲后面两步。 透析三棱镜的第二步是：重构方法。 第二步：重构方法 上节课我们说过，当出现了问题，我们习惯性的会从现状出发，去寻找一个能实现目标的方法，但结果往往会治标不治本，就好比你发烧的时候，如果直接把冰袋敷在头上，那么看上去是把体温降下来了，但因为本质的问题，也就是细菌感染并没有解决，所">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-aa4da95ac26afc6092971f00c1aa3f71.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-6c41cfabe5368564d5f03acea65306dd.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-d870a37650ef70d01c66c20cce261e66.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-f746a7be66877af8e9047881a8dea8d3.webp">
+<meta property="article:published_time" content="2021-12-16T09:35:17.332Z">
+<meta property="article:modified_time" content="2021-12-13T07:46:30.351Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.zhimg.com/v2-aa4da95ac26afc6092971f00c1aa3f71.webp">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-不平凡的思考力：【聪明】是可以学会的/13.一秒钟，看透问题本质" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/13.%E4%B8%80%E7%A7%92%E9%92%9F%EF%BC%8C%E7%9C%8B%E9%80%8F%E9%97%AE%E9%A2%98%E6%9C%AC%E8%B4%A8/" class="article-date">
+  <time class="dt-published" datetime="2021-12-16T09:35:17.332Z" itemprop="datePublished">2021-12-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>上节课我们讲了一个分析问题的方法，叫做：透析三棱镜。以及，介绍了它的第一个步骤：校准目标。</p>
+<p>这节课，我们继续讲后面两步。</p>
+<p>透析三棱镜的第二步是：重构方法。</p>
+<p><strong>第二步：重构方法</strong></p>
+<p>上节课我们说过，当出现了问题，我们习惯性的会从现状出发，去寻找一个能实现目标的方法，但结果往往会治标不治本，就好比你发烧的时候，如果直接把冰袋敷在头上，那么看上去是把体温降下来了，但因为本质的问题，也就是细菌感染并没有解决，所以，这个症状还会重复出现的。</p>
+<p>那怎么办？</p>
+<p>你得从这个现状，再往前倒推一步，去找到导致这个现状出现的原因。</p>
+<p>那这个现状是怎么出现的？</p>
+<p>原来，我们计划使用方法 A，来达成目标 B，对吧？</p>
+<p>但是，目标没有实现，那这个现状，不就是由原来的这个解决方法 A 所导致的吗？你点开图文，可以看到一张图示：</p>
+<p><img src="https://pic1.zhimg.com/v2-aa4da95ac26afc6092971f00c1aa3f71.webp" alt="img"></p>
+<p>好，既然现状是由原来的方法 A 所导致的，那么我们要做的，不是从现状出发，再去找一个新的方法，而是回过头，把原来的这个方法给替换掉。因为，原来的方法如果还在继续运行，那当前的问题就会重复出现。</p>
+<p>这里有点绕，我举个例子。</p>
+<p>比如 1861 年，清政府开启了洋务运动，就是想要去学习西方的先进技术，结果你已经知道了，不太成功；而几乎在同一时刻，日本开始了明治维新，同样也是学习西方，但是他们却非常成功，为什么？</p>
+<p>洋务运动的指导思想是八个字，叫做：「师夷制夷，中体西用。」什么意思？</p>
+<p>就是要学习西方的长处，也就是要学习他们的科学技术，等学会了，然后就可以反过来对付他们了。</p>
+<p>但是，我们得坚持「中体西用」，就是国家和社会的主体结构，还得维持原来的封建体质，维持儒家文化，这些都不能不变，然后在这个前提之下，我们去学习并应用西方的技术，来提高国力。</p>
+<p>是不是听着是挺好的，保留好的传统，学习新的技术。</p>
+<p>洋务运动刚开始的时候，确实也非常不错，但是越到后面阻力越大，为什么？</p>
+<p>被西方技术全面武装起来的，号称亚洲第一水师的北洋水师，在甲午战争中，几乎全军覆没，这又是为什么？</p>
+<p>这，就是在不改变原来的方法 A（也就是封建体制，儒家文化）的情况下，强行去改变现状 B’（也就是国力落后），所导致的结果。你点开图文，可以看到一张图示。</p>
+<p><img src="https://pic3.zhimg.com/v2-6c41cfabe5368564d5f03acea65306dd.webp" alt="img"></p>
+<p>看上去「表面问题」（也就是国力落后）很快得到了改善，但是，原来的方法 A（也就是封建体制，儒家文化）并没有动摇，那些隐藏在表面之下的「本质问题」依然存在。</p>
+<p>洋枪洋炮是换上了，但是，该怎么用呢？士兵该如何训练？现代战争该如何打？</p>
+<p>我们是能照葫芦画瓢，自己造洋枪洋炮了，但是，质量如何保证？产能如何提高？时间长了要怎么维修？如何更新换代？等等。</p>
+<p>这些问题，就不仅仅是引入技术就可以的，而是需要通过国家的政治、军事、经济、商业、教育等等各方面一起改革，才能解决。</p>
+<p>如果直接从现状出发改变，就好比你明明种了一棵苹果树，现在已经长到了一半了，你却想把它改成葡萄树。但是呢，你又不砍掉原来的苹果树，而是直接在苹果树上挂葡萄，那结果就可想而知了。</p>
+<p><strong>好，我们再来看日本。</strong></p>
+<p>他们的明治维新之所以会非常成功，是因为，他们不仅仅是在学习西方的科学技术，而是在全盘的西化。</p>
+<p>比如建立新的政府啊，政体改为君主立宪制啊，经济上推行「殖产兴业」啊，还有，学习欧美的技术，进行工业化改造，提倡文明开化，大力发展教育，等等等等，就连普通老百姓的日常生活，也要全面的欧洲化。</p>
+<p>这，就是直接在原来的方法 A（也就是日本当时的幕府时代）上动刀，真正的推动了国家的整体变革。你点开图文，可以看到一张图示：</p>
+<p><img src="https://pic2.zhimg.com/v2-d870a37650ef70d01c66c20cce261e66.webp" alt="img"></p>
+<p>所以，想要改变现状，你就得把原来的方法 A 也一起改了。</p>
+<p>中国之后的崛起，也是因为原有的方法 A（也就是封建体制）被彻底的摧毁了，所以才能实现的，虽然代价是惨痛的，但是要从本质上解决问题，我们就不得不这样做。</p>
+<p>重复同样的方法，只能得到同样的结果；想要有不同的结果，你就需要用不同的方法。</p>
+<p><strong>我们回到这一章开头王小锤的案例，他的团队离开了 2 名重要的销售，导致业绩下滑，怎么</strong>办？</p>
+<p>你不应该马上给出解决方案：也就是再给他补两名销售。而是要回过头，去看看他平时是用什么方式经营团队的，也就是原来的方法 A 是怎么样的？</p>
+<p>管理方法是什么？责权利有没有对等？是否用了情境管理？团队的结构是如何的？合适的人有没有放到合适的位置上？激励机制所以否有效？资源分配是否不公平？究竟是哪个部分导致了员工的离开？</p>
+<p>如果以上这些导致员工离开的「原有方法」不改变，你只是单纯的再给他的团队补 2 个人，那么还会有新的人继续离开的。 </p>
+<p>当然，调整的方法需要具体问题具体分析。不是我在这里讲一套通用的方法，就能有用的。你平时看的大量的书籍，其实都是在讲各种各样的方法，这些就像是不同的药丸，当你能够快速的找到本质的问题，就能在这些药丸中找到适合的来对症下药了。</p>
+<p>好，这是透析三棱镜的第二步：重构方法。</p>
+<p>接下来，我们来看第三步：消除变量。</p>
+<p><strong>第三步：消除变量</strong></p>
+<p>如果说 A 和 B（也就是方法和目标）都没有问题，那么就一定出现了变量 C，是它导致了当前的问题。</p>
+<p>可能是内部的变量，比如说，在原计划中，有些人并不能胜任这份工作，或者团队的执行力比预期的要差。</p>
+<p>也可能是外部变量，比如，你平时非常注意保养身体，控制饮食，保持运动，但还是生病了，那就不是方法有问题，而可能是被病毒感染了，这个不可预料的病毒入侵，就是变量 C。</p>
+<p>你点开文稿，可以看到一张示意图：</p>
+<p><img src="https://pic3.zhimg.com/v2-f746a7be66877af8e9047881a8dea8d3.webp" alt="img"></p>
+<p>是因为出现了不可预计的变量，导致了问题。因此，解决方案就应该是找到并消除这个变量，对吧？</p>
+<p><strong>那具体该怎么做呢？</strong></p>
+<p>首先，你要建立一套基本的思考框架，叫做：<strong>象、数、理。</strong></p>
+<p>什么意思？</p>
+<p>就是任何一个「现象」背后，一定有「数据」，任何「数据」的变动，背后一定有「道理」。</p>
+<p>也就是说，当你发现某个现象之后，你要做的第一件事，是赶紧去找相关的数据，然后用「数据」来说明问题，这样，你就可以先从<strong>感性的认知</strong>变回<strong>理性的分析</strong>。</p>
+<p>面对一个客观问题，你要避免使用「我感觉…」这样的表述方式，比如：我感觉最近的用户投诉变多了…</p>
+<p>这样的反馈，其实没有任何意义，因为这只是你的观点，而不是事实，而问题需要用 事实来描述，对吧？这个我们在上节课已经说过了。</p>
+<p>那什么是事实？事实需要你用数据来说明，比如：</p>
+<p>上个月我们的销量是 1000 单，总共接到 2 个投诉电话，投诉率为 2‰；而这个月，我们卖了 3000 单，却接到了 20 次投诉电话，投诉率为 6.7‰，比上个月足足提高了 3 倍多，这个问题需要引起我们的重视！</p>
+<p>这就是用数据说话。</p>
+<p>但，这还不够，要了解问题的本质，你要继续挖掘更多更细的数据，比如：这 20 个投诉电话，分别投诉了哪些内容？</p>
+<p>然后你发现，其中有 19 个投诉，都是在说产品的质量问题，有 1 个投诉，说的是物流问题…</p>
+<p>当然你还可以继续追问下去，比如具体是哪些产品的哪些部位有质量问题？占比各是多少？这些产品分别是什么时候生产的？等等。</p>
+<p>总之，把问题拆分的越细，你看到的问题就会越接近本质。</p>
+<p><strong>好，有了明确的数据，我们就能寻找「导致数据变化背后的道理」是什么了。</strong></p>
+<p><strong>怎么找？</strong></p>
+<p>你可以使用「5Why 提问法」来寻找，所谓 5why 也就连续追问 5 个为什么，来寻找这个数据变化背后的原因（当然，这个 5 只是一个象征性的数字，你也可以问 6 个问题或者 7 个问题，总是就要不断的刨根问底。）</p>
+<p>比如说，你问员工：「<strong>为什么我们这个月产品</strong> <strong>的次品率是上个月的三倍？</strong>」</p>
+<p>员工告诉你：「是因为订单变多了，很多都放到了晚上，而我们晚上的次品率就比白天要高。」</p>
+<p><strong>然后，你需要问第二个为什么：「那为什么晚上的次品率会比白天高呢？」</strong></p>
+<p>员工回答说：「 因为晚上的品控把关不严。」</p>
+<p><strong>这时，你就需要继续追问：</strong>「那<strong>为什么晚上的品控把关会不严呢？</strong>」</p>
+<p>员工又回答：「 因为很多工人晚上都在偷偷地看手机。」</p>
+<p><strong>诶你看，问题开始变得有意思了。</strong></p>
+<p><strong>好，继续问下一个为什么：「那为什么半夜加班会偷偷看手机呢？」</strong></p>
+<p>员工说：「 因为最近正好是世界杯…」</p>
+<p><strong>你看，原来，是世界杯，这个外因，导致了产品质量的下降！</strong></p>
+<p>然后怎么办？给国际足联打电话，让他们把世界杯给取消吗？</p>
+<p>找到了原因，接下去你要做的，是把行动落在「自己可以改变」的事情上，你不能让世界杯暂停，但是你却可以让工人们进入工厂时不要带手机，这样问题就解决了。</p>
+<p>好，这就是透析三棱镜的第三个方法：消除变量。</p>
+<p><strong>小结</strong></p>
+<p>下面，我们来小结一下。</p>
+<p>这节课我们讲了透析三棱镜的第二步和第三步。</p>
+<p>第二步，重构方法，现状是由原来的方法所导致的，因此，想要改变现状，不是从现状出发，再添加一个新的解决方案，而是回过头，去改变原来的方法系统。</p>
+<p>第三步，消除变量，如果 A 和 B（也就是目标和方法）都没有问题，那一定是出现了变量，导致了问题的发生。你可以通过「象、数、理」这个基本的思考框架来寻找它们，并通过 5Why 提问法，挖掘数据背后的真正原因。</p>
+<p>在电影《教父》中有一句经典的旁白，他说：「在一秒钟内就能看到本质的人，和花半辈子也看不清一件事本质的人，自然是不一样的命运。」</p>
+<p>祝你从今天开始，也能一眼看透问题的本质，开启不同的命运！</p>
+<p><strong>今天留给你的思考题是：</strong></p>
+<p>请试着用「透析三棱镜」来分析一下你们公司最近遇到的一个问题。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/13.%E4%B8%80%E7%A7%92%E9%92%9F%EF%BC%8C%E7%9C%8B%E9%80%8F%E9%97%AE%E9%A2%98%E6%9C%AC%E8%B4%A8/" data-id="ckx8rpjhw00123khyhc42c8k9" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/14.%E4%B8%A5%E5%AF%86%E7%9A%84%E9%80%BB%E8%BE%91%EF%BC%8C%E6%98%AF%E4%B8%80%E5%88%87%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/12.%E5%88%86%E6%9E%90%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
