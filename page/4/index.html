@@ -1,1062 +1,279 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>Hexo</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Hexo</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>Index</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>Tags</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>Categories</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>Archives</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>About</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Hexo</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			Index
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			Tags
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			Categories
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			Archives
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			About
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			Contact
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			Friends
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/4/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
     }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-12-29 02:05:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
-        20%,
-        60% {
-            transform: rotate(-25deg);
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
         }
-        40%,
-        80% {
-            transform: rotate(10deg);
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return item.value
+      }
     }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    </nav>
-
-</header>
-
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-
-<main class="content">
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/11.%E6%80%8E%E6%A0%B7%E7%B2%BE%E5%8A%9B%E5%85%85%E6%B2%9B%E5%9C%B0%E6%8A%95%E5%85%A5%E5%AD%A6%E4%B9%A0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                还记得我之前讲得公式么？成功取决于：投入的时间长度、专注度、精力、策略和目标。如果我们想要提高效率或者尽快完成工作的话，除了增加时长之外，必须提高的就是每分钟的精力值，否则疲惫的 8 小时没有意义。
-为什么我们总是感觉很累？这几乎是都市人的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/10.%E5%8F%AA%E6%9C%89%E9%9B%86%E4%B8%AD%E6%B3%A8%E6%84%8F%E5%8A%9B%EF%BC%8C%E6%89%8D%E6%98%AF%E6%9C%89%E6%95%88%E5%8A%AA%E5%8A%9B/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                学习拼的就是专注力。谁能够抑制其他冲动，集中精神、高效、坚持学习，谁就能取得最后的胜利。在学习这件事情上，人和人之间最大的差距之一就是专注力——注意力太稀缺了。如何长时间的专注学习？
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/11.%E6%80%8E%E6%A0%B7%E7%B2%BE%E5%8A%9B%E5%85%85%E6%B2%9B%E5%9C%B0%E6%8A%95%E5%85%A5%E5%AD%A6%E4%B9%A0/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/11.%E6%80%8E%E6%A0%B7%E7%B2%BE%E5%8A%9B%E5%85%85%E6%B2%9B%E5%9C%B0%E6%8A%95%E5%85%A5%E5%AD%A6%E4%B9%A0/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.567Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">还记得我之前讲得公式么？成功取决于：投入的时间长度、专注度、精力、策略和目标。如果我们想要提高效率或者尽快完成工作的话，除了增加时长之外，必须提高的就是每分钟的精力值，否则疲惫的 8 小时没有意义。
+为什么我们总是感觉很累？这几乎是都市人的通病，我们把精力值分为四个层次：
+第一层次：极度疲惫，力不从心；
+第二层次：强打精神，勉强应付；
+第三层次：积极应对，全力以赴；
+第四层次：精力充沛，活力四射。
+大部分人处于第二层次。
+精力是一个会被耗费过程，就跟电池一样，所以为了保持精力充沛，神清气爽的去奋斗，我们需要从三个方向上做努力：恢复和补充自己的精力、扩展自己的精力上限值、减少不必要的精力消耗。
+一个人的精力会受到四个方面的影响：休息、饮食、体能、情绪和价值感。
+一、恢复和补充自己的精力
+（一）休息
+补充精力的重要方式就是睡眠。在睡眠的这个事情上，我们存在很多问题，比较典型的有三种：
+第一 时间不够用的时候首先侵犯睡眠时间；
+第二 过度睡眠；
+第三 无效睡眠。
+1.昼夜节律
+早在 18 世纪，天文学家对含羞草进行了研究，发现含羞草的叶片并不依赖于日光，在黑暗环境中仍然会有规律的在 24 小 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/10.%E5%8F%AA%E6%9C%89%E9%9B%86%E4%B8%AD%E6%B3%A8%E6%84%8F%E5%8A%9B%EF%BC%8C%E6%89%8D%E6%98%AF%E6%9C%89%E6%95%88%E5%8A%AA%E5%8A%9B/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/10.%E5%8F%AA%E6%9C%89%E9%9B%86%E4%B8%AD%E6%B3%A8%E6%84%8F%E5%8A%9B%EF%BC%8C%E6%89%8D%E6%98%AF%E6%9C%89%E6%95%88%E5%8A%AA%E5%8A%9B/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.560Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">学习拼的就是专注力。谁能够抑制其他冲动，集中精神、高效、坚持学习，谁就能取得最后的胜利。在学习这件事情上，人和人之间最大的差距之一就是专注力——注意力太稀缺了。如何长时间的专注学习？
 一、学习前的准备
 （一）学习计划
-1.在每天开始学习前，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/1.%E7%94%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E7%A8%8B%E5%BC%8F%E6%9D%A5%E6%A3%80%E9%AA%8C%E4%BD%A0%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%88%E6%9E%9C/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                在中国学生中很常见的一个问题就是，只知道自己学的不好，但是不知道为什么不好。一些学生把学不好的原因判定为不爱学习。这样的学生需要的是一个合适的开始方法。毕竟在过去他的成绩真的太差了，很难会愿意开始学习，并且感兴趣。
-对于用功学习的人。我们很
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/9.%E4%B8%8D%E4%BC%9A%E4%B8%93%E6%B3%A8%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%BF%99%E7%A2%8C%E5%8F%AA%E6%98%AF%E5%9C%A8%E6%BC%94%E6%88%8F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我们课程的第一模块是「大脑重组」，我会在讲具体的思考方式之前，先帮你重新激活一下大脑。这就好比你学习一项运动之前，得先锻炼一下自己的身体素质，有好的身体素质，学起来才会更快，对吧？
-因此，为了激活你的大脑，前三章我分别为你的大脑打开了封印，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/8.%E5%8F%98%E8%81%AA%E6%98%8E%EF%BC%8C%E5%B9%B6%E6%B2%A1%E6%9C%89%E6%83%B3%E8%B1%A1%E4%B8%AD%E9%82%A3%E4%B9%88%E9%9A%BE/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这是第三章的第二节课，我们继续讲如何提升思考能力。
+1.在每天开始学习前，明确本次学习的任务和结束时间
+� 问自己三个问题：我为什么要学这些东西？我今天要解决什么问题？我预估多久可以学完这些东西？
+让两个人同样地去做十道题。一个人知道自己练习这十道题的目的是为了强化易错的知识点，带着解决问题的心态进入学习，必然比一个只给自己规划定量任务的人学习要专注。
+让两个人记忆同一章节的内容。一个人清楚知道必须在下午 6 点前结束任务，一个人只是模糊知道下午要把这些内容背完，前者集中注意力的紧迫性更强，在后者的心里，下午可以是 6 点结束，也可以是 7 点结束，当结束时间有弹性的时候，就会下意识认为还有很长的学习时间，更难集中精力。
+所以你每次不够专注，原因可能有两个：
+第一，你不知道自己接下来这段学习的目的是什么、自己要解决的问题是什么，学习对于你来说是一个机械动作，背离动机与情绪的情况下，注意力更不易集中；
+第二，没有截止的时间， ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/1.%E7%94%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E7%A8%8B%E5%BC%8F%E6%9D%A5%E6%A3%80%E9%AA%8C%E4%BD%A0%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%88%E6%9E%9C/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/1.%E7%94%A8%E5%AD%A6%E4%B9%A0%E6%96%B9%E7%A8%8B%E5%BC%8F%E6%9D%A5%E6%A3%80%E9%AA%8C%E4%BD%A0%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%88%E6%9E%9C/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.552Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">在中国学生中很常见的一个问题就是，只知道自己学的不好，但是不知道为什么不好。一些学生把学不好的原因判定为不爱学习。这样的学生需要的是一个合适的开始方法。毕竟在过去他的成绩真的太差了，很难会愿意开始学习，并且感兴趣。
+对于用功学习的人。我们很擅长把她们学习不好归到，没有学习方法或者学习方法不正确上。但是这种归因方法，其实并没有找出真正的问题。
+一、学习不好的原因
+1. 典型的时间投入不够
+想要达到一个比较好的学习效果，首先要投入足够多的时间，即便再好的学习方法，都是需要时间的。而且学习时间越长越熟练，有时候即便它不够高效，投入时间长到一定程度了，效果也不会差。
+2.精力
+精力不充沛的学习时间是低质量的，所以相比较于时间来说，用精力去衡量我们对一个事情的投入多少，其实更科学。
+3.注意力
+很多人的问题都出在学习时间很长，但是集中注意力的时间不长。在我们这个时代，注意力是稀缺资源，不管是抖音还是微博，都在抢夺你的注意力。有一句话是这样说的，以前都说天才是 1% 的灵感+ 99% 的汗水，实际上天才是 3% 的努力+ 97% 不被互联网分心的能力。
+4.目标
+目标对学习的促进作用是非常明显的， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/9.%E4%B8%8D%E4%BC%9A%E4%B8%93%E6%B3%A8%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%BF%99%E7%A2%8C%E5%8F%AA%E6%98%AF%E5%9C%A8%E6%BC%94%E6%88%8F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/9.%E4%B8%8D%E4%BC%9A%E4%B8%93%E6%B3%A8%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%BF%99%E7%A2%8C%E5%8F%AA%E6%98%AF%E5%9C%A8%E6%BC%94%E6%88%8F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.543Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">我们课程的第一模块是「大脑重组」，我会在讲具体的思考方式之前，先帮你重新激活一下大脑。这就好比你学习一项运动之前，得先锻炼一下自己的身体素质，有好的身体素质，学起来才会更快，对吧？
+因此，为了激活你的大脑，前三章我分别为你的大脑打开了封印，装入了知识，并找到了提高思考能力的途径。
+但是激活并没有完成，因为还差最后一个关键步骤。
+忙碌的一天…
+我们来看个场景。
+假设，今天是个星期天，你计划在家好好把周一要讲的 PPT 给准备一下，除了晚上有一个饭局，今天也没什么事儿，你想时间应该来得及，于是，你打开电脑，泡上了一杯咖啡，准备开始工作…
+但是突然，电脑上弹出一则新闻，说：《8 旬老人长期被保姆殴打…》
+这是什么情况？
+这个标题，看得让人很生气！
+于是，你点开了新闻，果然，越看越气！你忍不住在评论区里问候了一下这位保姆的全家…
+在愤愤不平中，你关掉了新闻，抿上一口咖啡，想重新回到工作中…
+但突然，电话又响了，是你的一个朋友，她说最近自己在工作上不太顺利，同事给她穿小鞋，业绩也上不去，可能会被公司辞退，她很难过，所以来找你诉苦了…
+你不好意思拒绝，只能听她抱怨，还要不断的安慰她。
+就在这个时候 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/8.%E5%8F%98%E8%81%AA%E6%98%8E%EF%BC%8C%E5%B9%B6%E6%B2%A1%E6%9C%89%E6%83%B3%E8%B1%A1%E4%B8%AD%E9%82%A3%E4%B9%88%E9%9A%BE/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/8.%E5%8F%98%E8%81%AA%E6%98%8E%EF%BC%8C%E5%B9%B6%E6%B2%A1%E6%9C%89%E6%83%B3%E8%B1%A1%E4%B8%AD%E9%82%A3%E4%B9%88%E9%9A%BE/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.535Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这是第三章的第二节课，我们继续讲如何提升思考能力。
 思考的过程
 要提高思考能力，你首先得知道「思考」到底是怎么一个的过程。
 比如上节课我们说到一个问题：7×8=？
 当你面对这个问题的时候，请问，你是怎么思考的？ 
-第一种情况，你没有相关的背
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
+第一种情况，你没有相关的背景知识。那么，你就看不懂 7 和 8 这两个数字，也看不懂「乘号/等号」这样的数学符号，对吧？ 
+这个时候，你大脑的状态，就是一片空白的。
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/7.%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%A9%B6%E7%AB%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
+那第二种情况呢？就是你有一定的背景知识，你看得懂题目，但是你不会背乘法口诀表，因此，你只能把题目，转化成一个 7 行 8 列的点阵图，然后一个个数点点。
+好，这是第二种情况，你有一定的背景知识。
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                现在，你的大脑已经解除了封印，并且开始吸收大量的知识。
+ 最后，第三种情况，就是你会背乘法口诀表，于是，你看到了这个问题，就能直接给出答案，七八五十六。
+
+好，你点开图文，可以看到刚才这三种情况的示意图。
+你有没有发现，7×8，这明明是一个数学题，但这个答案是你计算出来的吗？
+不是！
+它是在你的记忆中找到的！
+看上去，你的大脑是在思考问题，但其实，它是在回忆。
+好，我们再来看一个问题：
+比如说，你研发了一款产品，现在你在思考，该如何推广它？
+那你会怎么思考？
+第一种情况， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/7.%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%A9%B6%E7%AB%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/7.%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%A9%B6%E7%AB%9F%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8%EF%BC%9F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.528Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">现在，你的大脑已经解除了封印，并且开始吸收大量的知识。
 那么，你该如何运用这些知识，来提高自己的思考能力呢？
 这就是我们今天要开始讲的第三章的内容。
 吓尿指数
 先说一个特别有意思的概念，叫做「吓尿指数」，什么意思？
-就是把一个人，穿越到若干
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/6.%E6%9C%AA%E7%BB%8F%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%9F%A5%E8%AF%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E5%8A%9B%E9%87%8F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上一节课我们讲了三步学习法的第一步：打开大脑，今天我们把剩下的两步讲完。
+就是把一个人，穿越到若干年后的某一天，他会被那时的场景给吓尿！这个「若干年」的时间跨度，就叫做「吓尿指数」。
+比如说，将一万年前，一个刚刚会使用火的智人，带到 1000 年前的宋朝，那么他就会被那时富丽堂皇的宫殿，柔软漂亮的衣服，以及人们所使用的各种工具给吓尿，这个一万年到一千年的时间跨度，就是那时的吓尿指数。
+而随着科技发展的越来越快，这个吓尿指数会不断的缩短。
+比如现在，你把两百年前的嘉庆皇帝，带到今天，他就会被满街的汽车，天上的飞机，每个人手中拿的手机，还有什么电脑、机器人、VR、AR，等等各种高科技给吓尿…
+好，这个是吓尿指数，那 我的问题来了。
+他们为什么会被吓尿？是因为看到的科技太先进，让他们有点害怕了吗？
+不是。
+请你想象一下 100 年后的世界，会是什么样的？
+我们可能生活在一个虚拟的世界里，每天都在玩游戏；我们已经和机器人在一起共同生活了，甚至，我们已经和 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/6.%E6%9C%AA%E7%BB%8F%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%9F%A5%E8%AF%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E5%8A%9B%E9%87%8F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/6.%E6%9C%AA%E7%BB%8F%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%9F%A5%E8%AF%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E5%8A%9B%E9%87%8F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.520Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上一节课我们讲了三步学习法的第一步：打开大脑，今天我们把剩下的两步讲完。
 第二步：放入知识
 上节课我们说，你不能拿经验来指导行动，因为经验有一定的偶然性，一次成功，不代表每次都能成功；别人能成功，不代表你也可以，对吧？ 
-你只有从经验中提炼
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/5.%E5%9B%9E%E5%88%B0%E5%88%9D%E5%BF%83%EF%BC%8C%E7%BB%99%E5%A4%A7%E8%84%91%E5%AE%89%E8%A3%85%E4%B8%89%E4%B8%AA%E8%BF%87%E6%BB%A4%E5%99%A8/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                你好，这里是《不平凡的思考力》，我是谢春霖。
+你只有从经验中提炼出的知识和规律，才能让事情重复成功。
+但是，如果你都是通过自我总结得来的经验，提炼出的知识，那效率就太低了。你花了三五年，损失了几百万，所总结出来的那些规律，也许只是别人已经掌握的知识。
+你所遇到的 99% 的问题，其实别人都遇到已经过了，他们已经用自己的时间和成本，把这些经验总结成了知识，而你要做的，只需要把它们拿过来，放到自己的大脑里边，去执行就可以了，这样，能大大节省你的试错成本。
+那怎么学呢？
+就看书吗？
+首先你要知道，大脑的记忆力是非常不靠谱的，一个人今天看了一本书，第二天就能忘记大半。
+大脑，不是用来记忆的，大脑，是用来思考的。
+那怎么办呢？
+如果记都记不住，那学再多也没用啊。
+给大脑外接一个硬盘
+好，记忆确实不是人脑的强项，但这是计算机的强项啊，因此，你可以利用计算机的这个能力，来帮助你记忆。
+这里，我推荐一个工具，叫做：印象笔记。当然 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/5.%E5%9B%9E%E5%88%B0%E5%88%9D%E5%BF%83%EF%BC%8C%E7%BB%99%E5%A4%A7%E8%84%91%E5%AE%89%E8%A3%85%E4%B8%89%E4%B8%AA%E8%BF%87%E6%BB%A4%E5%99%A8/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/5.%E5%9B%9E%E5%88%B0%E5%88%9D%E5%BF%83%EF%BC%8C%E7%BB%99%E5%A4%A7%E8%84%91%E5%AE%89%E8%A3%85%E4%B8%89%E4%B8%AA%E8%BF%87%E6%BB%A4%E5%99%A8/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.512Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">你好，这里是《不平凡的思考力》，我是谢春霖。
 这节课我们开始讲第二个章节：三步学习法。
 前一章，我为你解开了大脑里的两道封印，一道是负面词语，一道是负面情绪。
-现在，你的大脑已经可以正常工作了，但是它的能力还不强，这个就好比是一台电脑，你刚
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/4.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E9%87%8C%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%81%93%E5%B0%81%E5%8D%B0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上节课我们说到，大脑里的第二道封印叫做：负面情绪。
+现在，你的大脑已经可以正常工作了，但是它的能力还不强，这个就好比是一台电脑，你刚装完了操作系统，可以正常开机运行了，但是，它还没有办法处理复杂的工作，因为，他还没有安装软件。
+大脑也一样，想要提高解决问题的能力，它就需要学习知识。
+那怎么学习呢？
+首先，你得有足够的阅读量，对吧？没有一定的阅读量，咱们不谈方法。
+而阅读量，在今天这个时代，已经完全不是问题，只要你想，你可以通过看书、听讲座、刷微博、读公众号，等等各种方式，在任何时候任何地方看到你想看的任何内容，在今天这个时代，想要获取知识，已经变得非常简单。
+好，如果你已经有了一定的阅读量，但是，你还是感觉貌似学了很多，却没什么收获，面对问题，还是不知道该怎么办，那么，下面我们再来谈一谈学习的方法。
+我把学习为了三个步骤。
+你听过「如何把一头大象放入冰箱里边」这个问题吗？
+把大象放进冰箱，需要三步，分别是：打开冰箱门，放入大象，然后再关上冰箱门，对吧？
+其实学习也是一样，也可以把 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/4.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E9%87%8C%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%81%93%E5%B0%81%E5%8D%B0/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/4.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E9%87%8C%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%81%93%E5%B0%81%E5%8D%B0/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.504Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上节课我们说到，大脑里的第二道封印叫做：负面情绪。
 今天我们来讲一下这道封印具体该怎么解。
 如何「治未病」？
 上节课我们说，一旦你有了负面情绪，其实就已经很难控制了。
-所以，你要做的不是等情绪来了，再想对策，而是要想办法，让这些负面情绪，没
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/32.%E6%80%8E%E4%B9%88%E5%81%9A%E3%80%8C%E7%AA%81%E5%8F%98%E5%BC%8F%E5%88%9B%E6%96%B0%E3%80%8D%EF%BC%9F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上节课我们讲了「重组式创新」，这节课我们来讲一下「突变式创新」。
+所以，你要做的不是等情绪来了，再想对策，而是要想办法，让这些负面情绪，没有机会出现，也就是所谓的「治未病」。
+那具体该怎么做呢？
+要治未病，那你就得先知道病因是什么，然后才能对症下药，把它们扼杀在摇篮里，对吧？
+病因，上节课我们已经找到了，产生负面情绪的原因有 2 个：一是信念不匹配，二是能力不足够。
+那么对应的方法就是：改变信念，以及提升能力。
+我们先来说提升能力
+我们之所以会出现愤怒、恐惧、害怕、焦虑、担心，等等，这些负面情绪，通常是因为我们的能力无法解决眼前的问题。
+比如说战争突然爆发了，你被派到了前线，那么当你看到漫天的炮火，成堆的尸骨，我猜你那时的情绪状态一定是非常害怕的，因为你从来没有打过仗，你处理不了这么复杂、这么危险的情况。
+在那个环境下，你会无所适从，你不知道该干什么，能干什么，下一秒会发生什么，你甚至不知道该往哪里走…
+所以，不是每个人都能去前线打仗的，每个士兵，都是要经过非常严格的训练：从体能训练， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/32.%E6%80%8E%E4%B9%88%E5%81%9A%E3%80%8C%E7%AA%81%E5%8F%98%E5%BC%8F%E5%88%9B%E6%96%B0%E3%80%8D%EF%BC%9F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/32.%E6%80%8E%E4%B9%88%E5%81%9A%E3%80%8C%E7%AA%81%E5%8F%98%E5%BC%8F%E5%88%9B%E6%96%B0%E3%80%8D%EF%BC%9F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.496Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上节课我们讲了「重组式创新」，这节课我们来讲一下「突变式创新」。
 突变式创新
-基因突变，是因为基因在遗传复制的过程中，出现了错误，从而产生了一个全新的基因，因此，进行突变式创新的步骤和重组式创新正好相反，重组式创新，它是到外面去寻找，把其他
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/3/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">4 / 7</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/5/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+基因突变，是因为基因在遗传复制的过程中，出现了错误，从而产生了一个全新的基因，因此，进行突变式创新的步骤和重组式创新正好相反，重组式创新，它是到外面去寻找，把其他地方优秀的东西拿回来，和自己重新组合一下，变成一个新东西，而突变式创新呢？他是跑到自己的内部去，通过主动试错，在一次次「自我破坏」中，获得创新的。
+什么意思？
+下面，我就来说一下这个突变式创新的具体方法：
+第一步：将整体拆解成元素
+要修改基因，就得先知道自己的产品是由哪些元素组合起来的，对吧？比如你要对一个电风扇进行创新，那么你就得知道电风扇有哪些组成部分。比如，你可以把电风扇分解成：控制装置、风扇叶、电机、外壳这 4 个部分。
+然后呢？
+第二步：修改
+你要对这个结构进行一次修改，如果把这 4 个部分看成是一个基因组的 4 个碱基，那我们就可以模仿生物在基因遗传过程中会出现的那些「错误」来对它进行一些修改。
+比如：减去一个元素。
+第一种方式：减去一个元素
+基因在遗传复制的时候，有可能会出现部分遗传信息丢失的情况，从而导致了变异。
+因此，你可以模仿这种 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.807Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.789Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.781Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.773Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.766Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">65</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">65</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-12-28T18:05:15.370Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

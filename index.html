@@ -1,1236 +1,203 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>Hexo</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Hexo</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>Index</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>Tags</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>Categories</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>Archives</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>About</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Hexo</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			Index
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			Tags
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			Categories
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			Archives
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			About
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			Contact
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			Friends
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
     }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-12-29 02:05:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
-        20%,
-        60% {
-            transform: rotate(-25deg);
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
         }
-        40%,
-        80% {
-            transform: rotate(10deg);
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return item.value
+      }
     }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>Start
-                </a>
-
-                
-                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
         }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上节课跟大家分享了「痛苦小路和快乐小路」的故事，告诉大家为什么我们每次都会抵制不住诱惑，拖延真正的任务，大家已经了解了，解决拖延的四个方向，这节课跟大家分享一些具体的技术。我自己看到过、试过的所有有效的方法都在这里了，总有一个方法适合你，我
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                大家好，这节课解决拖延症的问题，主要分享拖延症带来的后果和发生过程，分析拖延的原因和解决问题的四个方向。拖延症被称为新型癌症，因为难以治疗、容易反复、患病之后耽误终身。
-我发现拖延这个事情是在各种事情上集中病发的，一个人一旦对自己的要求放低
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                大家好，这节课我们要解决的问题是，为什么我们的计划总是完不成？因为自己做的计划本身就是不可能完成的。
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.807Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上节课跟大家分享了「痛苦小路和快乐小路」的故事，告诉大家为什么我们每次都会抵制不住诱惑，拖延真正的任务，大家已经了解了，解决拖延的四个方向，这节课跟大家分享一些具体的技术。我自己看到过、试过的所有有效的方法都在这里了，总有一个方法适合你，我们的拖延症是有救的。
+1.十分钟之后再决定
+大家听我们这节课的时候一定要把笔记做好，一条一条记，当你面临诱惑不想行动的时候，想要拖延的时候，拿起来看一下笔记，哪一条适用去克服当下的拖延。每次你抵制不住诱惑的时候，要告诉自己，十分钟之后再决定。例如，不想学习工作，想看电视剧，不要立刻开电视，把课程笔记看一下，等待十分钟，之后你想开电视的冲动就没那么强烈了。
+2.警惕道德许可
+耶鲁大学曾经做过一项研究，让学生们在脱脂酸奶和热量很高的曲奇饼中选择一个，那些以为只有一次选择机会的同学，有 57% 选择了曲奇饼，而那些知道下周还会做出一次同样选择的同学，选择曲奇饼的人高达 83.3%。因为他们高估了自己下周的自律性，认为自己下周会选择脱脂酸奶，这给了他们道德许可，让他们在这次选择中更可能放纵自己去选择曲奇饼。而事实上，当他们下周做第二次选择的时候，只有 36% ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.789Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">大家好，这节课解决拖延症的问题，主要分享拖延症带来的后果和发生过程，分析拖延的原因和解决问题的四个方向。拖延症被称为新型癌症，因为难以治疗、容易反复、患病之后耽误终身。
+我发现拖延这个事情是在各种事情上集中病发的，一个人一旦对自己的要求放低开始拖延，就会在各个方面都表现出拖延。然后我就开始了和拖延症的斗争，在这个过程当中积累了相当丰富的战斗经验，并且最终取得了胜利。
+我想告诉大家的是，不拖延的生活真的很好，立刻做、高效做，做完了之后做点自己想做的事情，是非常幸福的。所以我常说最幸福不是说有什么东西，而是什么事儿都没有。
+一、拖延带来的后果是什么
+你在学生时代一定经历过这样的假期，放假第一天下决心在头三天写完作业，当开始要写的时候不是很想写，考虑到假期还很长就去玩儿了，越玩越焦虑，不过就算焦虑地玩也比写作业开心，所以就用这个节奏一直拖到最后一天，疯狂赶作业，终于连蒙带抄做完了。那时候你的感觉是什么？
+第一，你会觉得特别爽。因为终于完成了，并且在这么短的时间内完成了。
+第二，当老师把分数或者评语给到，或自己看到作业并不那么完美以后，会觉得内疚，这个成绩不是你想要的，效果也达不到自己的要求， ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.781Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">大家好，这节课我们要解决的问题是，为什么我们的计划总是完不成？因为自己做的计划本身就是不可能完成的。
 一、做计划时存在的问题
 （一）高估自己可用的时间
-1 个星期 7 天拥有 168 个小时，这是你计时的起点，从中减去睡觉、吃饭、娱乐等事情
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                在本节课程开始之前，我们先讨论一个问题：如何在三个月之内考上北京大学？
-我是在毕业之后决定考研的，白天去北京大学上自习，晚上回租的房子，在这段时间内非常非常勤奋。我相信大家也听过很多这样的故事，看过很多这样的采访，但如果只听到这些的话，就太
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上节课我们讲了复述记忆法的前两个步骤，也就是梳理和复述，大家都知道只记一遍不行，必须找时间复习和回忆才可以，保证短期记忆转化为长期记忆的一个关键方法就是重复。
-很多时候我们并不是忘记了，那个东西实际上是在脑子里的，但是我们提取不出来。本节课
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/34.%E7%BB%84%E7%BB%87%E5%AD%A6%E4%B9%A0%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%97%BA%E7%9B%9B%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%B4%BB%E5%8A%9B/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这节课给大家解决自学中最大的一个问题。自学和我们以前的学习相比，缺点就是缺少反馈。这是自学的一大弊端。自学如果没有反馈，就不能清楚地知道自己学得怎么样，哪里有问题。当然也不清楚自己哪里做得好，在什么地方有进步。这些未知会削弱我们的学习兴趣，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/33.%E6%B2%A1%E4%BA%BA%E6%8C%87%E5%AF%BC%EF%BC%8C%E8%87%AA%E5%AD%A6%E4%B9%9F%E4%B8%80%E6%A0%B7%E9%9D%A0%E8%B0%B1/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                今天和大家分享，怎么样在没人指导的情况下自己去联系。自学和在学校上课的时候不一样，虽然没有老师耳提面命地在旁边指导我们该怎么做，但自学的时候，我们会从「要我学习」切换到「我要学习」的状态。只要掌握了对的方法，并反复、刻意地练习，就可以让你的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/32.%E5%9C%A8%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%E6%8A%93%E5%8F%96%E6%9C%89%E6%95%88%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%91%8A%E5%88%AB%E6%97%A0%E7%94%A8%E5%8A%9F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                今天我们要跟大家分享的是，怎么样去找到入门的资料。
+1 个星期 7 天拥有 168 个小时，这是你计时的起点，从中减去睡觉、吃饭、娱乐等事情的时间，如果每天睡 8 个小时，就需要减去 56 个小时，如果每天花 2 个小时吃饭，就再减去 14 个小时，如果再减去晨起洗漱、交通等占用的时间，我让一个大学生去计算之后，他发现每周用来自己学习的时间不超过 20 个小时，但却安排自己一周复习完一个科目。所以我们在做计划的时候，第一个容易犯的错误就是高估自己可用的时间。每个人都应该计算一下，自己每周可以拿来工作和学习的时间到底有多少，另外除了高估时长之外，我们也会忽略有些时间的质量是不高的。
+（二）给每件事情预估的时间不正确，低估事情本身所需要的时间
+如会议，预计 1 小时，但实际不够用，最终被截止时间赶着往前走。因为预估不正确经常超时，会很焦虑把事情往前赶。我在学习中也犯过这样的错误，既高估了自己自由支配的时间，又低估了完成一件事情所需要花费的时间，我认为自己能够在 1 个小时之内背一个章节的法律 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.773Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">在本节课程开始之前，我们先讨论一个问题：如何在三个月之内考上北京大学？
+我是在毕业之后决定考研的，白天去北京大学上自习，晚上回租的房子，在这段时间内非常非常勤奋。我相信大家也听过很多这样的故事，看过很多这样的采访，但如果只听到这些的话，就太片面了，你会认为自己之所以没有成功是因为不够勤奋。问题是你根本无法做到像故事里的人那样勤奋，你开始不了、坚持不住、也不够专注。最后你会对自己特别厌恶，会认为自己很懒。
+其实大家都忽略了那些人之所以勤奋，并不是因为天生就是个勤奋的人。有一部分人之所以勤奋是因为他有策略，正确的顺序应该是：策略—勤奋—成功。
+如果没有策略，就会瞎勤奋，会坚持不下去，没有人是纯靠意志力成功的，所以每个人都要有自己的策略。
+一、媛媛的考研复习策略
+我考研的整个过程并不难，实际上虽然过程很辛苦，但是心态很轻松，我一天的有效学习时间大概只有 3—4 个小时，整个复习过程下来的全部有效时间不会超过 3 个月，但是仍然考上了，因为我在复习之前就找了一个 99% 可以考上的方法。在复习之前，我做了以下这几件事情：
+（一）研究往年真题以及北京大学录取分数线
+北大法硕的录取分数线一直都在  ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.766Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上节课我们讲了复述记忆法的前两个步骤，也就是梳理和复述，大家都知道只记一遍不行，必须找时间复习和回忆才可以，保证短期记忆转化为长期记忆的一个关键方法就是重复。
+很多时候我们并不是忘记了，那个东西实际上是在脑子里的，但是我们提取不出来。本节课我们介绍的提取练习就可以解决类似的问题，这种明明记过了却忘了，或者因为太紧张到了考试的时候想不起来了的问题，都可以在这节课里面解决。就像是——当我们把衣服放在了某一个衣橱里，只要多从里面拿出来几次，就不会忘记了。我们应该怎么去做提取练习呢？
+当你通过梳理和复述记忆了一本书之后，可以通过以下方式来做提取练习。
+一、顺序提取
+顺序就是按照顺序提取，分为两种方式。
+（一）对着目录复述
+讲出来每一节的内容是什么，看看能不能说清楚。目录本身就是框架，对着目录的时候，千万不要翻书，如果哪里想不出来了，就翻到对应的章节上做个标记。最后要达到一种对着目录可以复述出这个书的全部内容的程度，如果你对着目录都说不清楚的，那根本是没办法参加考试的，因为考试的时候连个目录都没有。
+（二）对着小标题复述
+按照顺序去做提取练习有个好处，就是你复述完了之后框架感特别好，你是可以讲出 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/34.%E7%BB%84%E7%BB%87%E5%AD%A6%E4%B9%A0%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%97%BA%E7%9B%9B%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%B4%BB%E5%8A%9B/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/34.%E7%BB%84%E7%BB%87%E5%AD%A6%E4%B9%A0%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%97%BA%E7%9B%9B%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%B4%BB%E5%8A%9B/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.758Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这节课给大家解决自学中最大的一个问题。自学和我们以前的学习相比，缺点就是缺少反馈。这是自学的一大弊端。自学如果没有反馈，就不能清楚地知道自己学得怎么样，哪里有问题。当然也不清楚自己哪里做得好，在什么地方有进步。这些未知会削弱我们的学习兴趣，让我们的自学计划遭到搁浅。这就像你跟一个人说话，但对方一声不吭，不搭理你，你说了几句就会觉得无趣，自动闭嘴。
+一、通常来说获得反馈的途径
+1 ．老师点评
+我们以前的学习通常是在老师的带领下进行的。老师会经常对我们的学习进行评价，会告诉学生，哪里做得好要保持，哪里有问题应该如何解决。
+2 ．考试
+我们在上学的时候，经常会有各种各样的考试，平时考、期中考、期末考，这些考试都属于非常常见的反馈方式，能检测我们学习成果如何。
+3 ．竞争
+竞争本身就可以带来反馈，比如你觉得自己很努力，今天学了 10 个小时，可是你的朋友今天学了 15 个小时，一竞争对比就发现自己可能学的不够。得出了这样的反馈——我还需要更努力。
+自学者没办法得到老师的点评，更不会有人给我们出试题，竞争的可能性又不大。
+二、自学者如何解决“缺少反馈”的问题
+（一）参加学习社群
+学习社群是一群基 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/33.%E6%B2%A1%E4%BA%BA%E6%8C%87%E5%AF%BC%EF%BC%8C%E8%87%AA%E5%AD%A6%E4%B9%9F%E4%B8%80%E6%A0%B7%E9%9D%A0%E8%B0%B1/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/33.%E6%B2%A1%E4%BA%BA%E6%8C%87%E5%AF%BC%EF%BC%8C%E8%87%AA%E5%AD%A6%E4%B9%9F%E4%B8%80%E6%A0%B7%E9%9D%A0%E8%B0%B1/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.750Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">今天和大家分享，怎么样在没人指导的情况下自己去联系。自学和在学校上课的时候不一样，虽然没有老师耳提面命地在旁边指导我们该怎么做，但自学的时候，我们会从「要我学习」切换到「我要学习」的状态。只要掌握了对的方法，并反复、刻意地练习，就可以让你的学习事半功倍。下面就把这套实用的方法介绍给大家：
+一、分解步骤
+无论学习什么，我们都需要把它具体化，并分解成一步一步的可操作的步骤。下面给大家介绍一下横向分解和纵向分解学习目标的方法。
+（一）横向分解
+横向分解就是要弄清楚我们的学习目标“由什么要素构成”，然后找出“需要怎么努力，努力多少才能达到这些要素”的答案。
+比如说你的目标是考上北大心理学硕士，就要先调查北大心理学考研要考哪些科目和历年的分数线，知道了自己需要考多少分才能上北大。接着，要了解每个考试科目的难度和自己擅长或不擅长的科目，才能设定每一科的目标分数，加起来达到总分就可以了。这就是横向分解目标的要素。
+这个目标还可以划分得更细，以英语为例，可以分成选择、完形填空、阅读理解等部分，要预测每个部分拿多少分才能达到英语考试的目标分数。
+学习目标就是要越分越细，如果每个考研科目都去细分预测分数， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/32.%E5%9C%A8%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%E6%8A%93%E5%8F%96%E6%9C%89%E6%95%88%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%91%8A%E5%88%AB%E6%97%A0%E7%94%A8%E5%8A%9F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/32.%E5%9C%A8%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%E6%8A%93%E5%8F%96%E6%9C%89%E6%95%88%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%91%8A%E5%88%AB%E6%97%A0%E7%94%A8%E5%8A%9F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.743Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">今天我们要跟大家分享的是，怎么样去找到入门的资料。
 一、搜索能力
 （一）搜索能力的重要性
-这个信息爆炸的年代，人跟人之间除了智力、过去的经验水平之间的区别之外，还有一个重要的能力区别，就是搜索能力。搜索能力特别重要，因为搜索能力有的时候就意
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/31.%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD%E9%83%BD%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%85%8D%E8%B4%B9%E5%AD%A6%E4%B9%A0%E7%9A%84/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我们从这节课开始往后的四节课，就是本套课程的最后四节课了，这四节给大家解决的不是考试的问题，而是想跟大家分享如何不花钱的去自学其他技能的经验。
-为什么这四节课特别重要，因为包括我在内，相信很多已经毕业的小伙伴都深刻感觉到，从考试这个环境当中
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/30.%E8%AE%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E8%A1%A8%E6%88%90%E4%B8%BA%E4%BD%A0%E7%9A%84%E6%96%B9%E5%90%91%E5%AF%BC%E5%B8%88/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                今天跟大家分享的是如何做学习记录，学习记录这个方法是我近几年慢慢悟出来的一个方法。这个方法尤其适用于那些特别不擅长管理流程的同学，不知道如何去复习的同学。你可能也经历过这样的状况，或者说遇到过这样的问题，就是离考试还有一段时间，也不知道应该
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 7</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+这个信息爆炸的年代，人跟人之间除了智力、过去的经验水平之间的区别之外，还有一个重要的能力区别，就是搜索能力。搜索能力特别重要，因为搜索能力有的时候就意昧着你解决问题的能力，可能就决定了你接下来解决问题的速度。搜索能力已经成为了互联网时代不可缺少的能力之一，拥有优秀的搜索能力，就可以快速找到有用的、准确的信息，也可以避免重复别人错误的经验，节省时间，提升自学效率。
+例如，自学的时候常常会遇到教材更新的情况，想学日语，考等级证书，你看到一套“中日交流标准日本语初级教材”，然后网上卖的挺便宜的就下单买了，当你开始自学，学到一半发现好多教程跟你书上的内容对不上，上网搜索才明白买的是修订之前的老版本，可是如果你买之前能得到这个教材已改版的信息，就不会绕这么大的圈子，浪费这么多时间了。你的搜索能力怎么样，有一个判断的小标准，就是当你出现问题的时候，是习惯于去找身边的人请教，还是习惯于动手上网找答案，你可以通过这样的小标准判断一下自己的搜索能力是强还是弱，如果是弱的话，那么一定要警惕了，在这样一个时代缺乏动手搜 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/31.%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD%E9%83%BD%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%85%8D%E8%B4%B9%E5%AD%A6%E4%B9%A0%E7%9A%84/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/31.%E4%BB%BB%E4%BD%95%E6%8A%80%E8%83%BD%E9%83%BD%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%85%8D%E8%B4%B9%E5%AD%A6%E4%B9%A0%E7%9A%84/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.734Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">我们从这节课开始往后的四节课，就是本套课程的最后四节课了，这四节给大家解决的不是考试的问题，而是想跟大家分享如何不花钱的去自学其他技能的经验。
+为什么这四节课特别重要，因为包括我在内，相信很多已经毕业的小伙伴都深刻感觉到，从考试这个环境当中脱离开，我们才感受到了学习需求来到社会反而是从头学习的过程，主要还是因为我们在学校学习的时候，学习过程中缺乏很重要的一环，叫做应用。所以我们过去学的东西一般很难在工作和社会生活当中被运用起来，或者说运用的时候发现觉得不足够，学会自学不仅是可以帮助你在一个差的学习环境之下考清华北大，这一辈子都可以成为你最重要的竞争力。
+但是我们自学难度是很大的，因为我们从小没有被培养这样自主学习的能力，希望大家通过这四节课，对自学有大概的了解，并且拥有这样的能力。
+一、应该学什么技能
+不要相信学什么都有用的说法。学什么都有用是指有大用有小用，但是我们的精力跟时间都是非常有限的，如果你同时开始三到五个目标或者说你选的目标不合适，就浪费掉了时间跟精力，所以强调一下，一定要谨慎地选择一个学习方向，选择一个心仪已久的技能，聚焦在这一个点上，集中自己的业余时间跟精力，把这个技能 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/30.%E8%AE%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E8%A1%A8%E6%88%90%E4%B8%BA%E4%BD%A0%E7%9A%84%E6%96%B9%E5%90%91%E5%AF%BC%E5%B8%88/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/30.%E8%AE%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E8%A1%A8%E6%88%90%E4%B8%BA%E4%BD%A0%E7%9A%84%E6%96%B9%E5%90%91%E5%AF%BC%E5%B8%88/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.727Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">今天跟大家分享的是如何做学习记录，学习记录这个方法是我近几年慢慢悟出来的一个方法。这个方法尤其适用于那些特别不擅长管理流程的同学，不知道如何去复习的同学。你可能也经历过这样的状况，或者说遇到过这样的问题，就是离考试还有一段时间，也不知道应该复习什么。你打开练习册或教材，发现其中好多又眼熟又不眼熟，无从下手。还有一种状态就是学什么都觉得特别的焦虑，心里面没数。这些问题都是在复习过程当中有可能遇到的问题。这些问题的解决方法就是去做学习记录。
+复习其实是一个大工程，我们参加考试，往往不止考一个科目，每一个科目可能涉及到成千个知识点，就跟盖个房子一样，盖房子需要流程图，每期工程要干什么，而且要落实到细节上，才能保证整个工程没有任何风险。我们复习有没有这样的流程图？很多同学都说有，我做的一轮计划二轮计划，第一轮打算一天复习四章 … … 这个可不叫具体的流程计划，这只是一个很粗糙的进度表而已，那我们执行完了之后要不要记录一下？在复习的过程当中，落后了计划，或者说计划有变，我们有做记录吗？你有没有经常遇到这样的情况，就是你做的计划，并没有执行好，到后面你就脚步乱了，开始乱学习了，不知道学哪好了。
+一 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.807Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.789Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.781Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.773Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.766Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">65</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">65</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-12-28T18:05:15.370Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

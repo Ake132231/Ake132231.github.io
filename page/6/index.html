@@ -1,1064 +1,278 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>Hexo</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Hexo</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>Index</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>Tags</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>Categories</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>Archives</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>About</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>Contact</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Hexo</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			Index
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			Tags
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			Categories
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			Archives
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			About
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			Contact
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			Friends
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/6/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
     }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-12-29 02:05:15'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
-        20%,
-        60% {
-            transform: rotate(-25deg);
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
         }
-        40%,
-        80% {
-            transform: rotate(10deg);
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return item.value
+      }
     }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    </nav>
-
-</header>
-
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-
-<main class="content">
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/22.%E7%A7%91%E5%AD%A6%E5%86%B3%E7%AD%96%E7%9A%84%E4%BA%94%E4%B8%AA%E6%AD%A5%E9%AA%A4/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这节课我们将开启一个全新的模块，叫做「问题解决」，在这个模块中，我们将用上一个模块中学到的那些思维方式，来解决现实中的一个又一个的具体问题。
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/22.%E7%A7%91%E5%AD%A6%E5%86%B3%E7%AD%96%E7%9A%84%E4%BA%94%E4%B8%AA%E6%AD%A5%E9%AA%A4/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/22.%E7%A7%91%E5%AD%A6%E5%86%B3%E7%AD%96%E7%9A%84%E4%BA%94%E4%B8%AA%E6%AD%A5%E9%AA%A4/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.412Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这节课我们将开启一个全新的模块，叫做「问题解决」，在这个模块中，我们将用上一个模块中学到的那些思维方式，来解决现实中的一个又一个的具体问题。
 这一章我们先来解决第一个常见问题：选择题。
 好，我们先来看几个问题，比如：
-\1. 你和别人约会，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/21.%E6%8E%8C%E6%8F%A1%E6%9E%81%E5%B0%91%E6%95%B0%E4%BA%BA%E6%89%8D%E8%83%BD%E5%85%B7%E5%A4%87%E7%9A%84%E4%B8%80%E7%A7%8D%E8%83%BD%E5%8A%9B/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这节课我们通过一个案例来说一下具体该如何使用系统性思维。
+\1. 你和别人约会，早到了半个小时，那你是会打一局王者荣耀，还是看一会儿书？
+\2. 一个朋友问你借钱，借的话你舍不得，不借的话面子又挂不住，那你是借还是不借？
+\3. 毕业之后，你更愿意去大公司拿稳定的收入？还是去个创业公司，用时间换空间？
+\4. 你已经 30 岁了，你是会继续在一个自己不喜欢的公司里边打工，还是会选择跳槽？或者下海创业？
+有句话叫做「男怕入错行，女怕嫁错郎」，意思是：选择往往大于努力，对吧？你也知道，很多问题，一旦选择错误，就会带来非常大的损失。所以，一旦面对选择题，你就会表现得特别纠结，两个都想选，或者两个都不敢选…怎么办？
+好，你说以上这些都是比较大问题，要考虑的因素太多太复杂了，确实很难判断。可是，为什么像空的时候是该玩游戏还是该看书？今天中午要去吃什么？出门该穿哪件衣服？两个差不多的产品该买哪个？等等这些日常的小问题，你还是会纠结呢？
+你说 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/21.%E6%8E%8C%E6%8F%A1%E6%9E%81%E5%B0%91%E6%95%B0%E4%BA%BA%E6%89%8D%E8%83%BD%E5%85%B7%E5%A4%87%E7%9A%84%E4%B8%80%E7%A7%8D%E8%83%BD%E5%8A%9B/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/21.%E6%8E%8C%E6%8F%A1%E6%9E%81%E5%B0%91%E6%95%B0%E4%BA%BA%E6%89%8D%E8%83%BD%E5%85%B7%E5%A4%87%E7%9A%84%E4%B8%80%E7%A7%8D%E8%83%BD%E5%8A%9B/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.404Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这节课我们通过一个案例来说一下具体该如何使用系统性思维。
 我们还是拿上一章讲结构化思维时说的一个问题来举例子，也就是「如何在未来三个月完成 100 万的销售业绩？」
 你点开图文，可以看到上一章我们通过结构化分析得到的结果：
 
-上一次，我们用
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/20.%E7%B3%BB%E7%BB%9F%E6%80%A7%E6%80%9D%E7%BB%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%B8%A4%E7%A7%8D%E7%BB%93%E6%9E%84%E6%A8%A1%E5%9E%8B/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这节课我将从零开始，一步一步告诉你该如何进行系统性思维。
+上一次，我们用「平面切割法」将这个问题拆分成了很多个部分，拆的很全面，也很 MECE。
+那接下来呢，我们就要用系统性思维来做进一步的分析。
+使用系统性思维，并不是说结构化思维没有用，相反，结构化思维能够把问题拆的很全面很细致，能够让你看到问题的全貌，这是基础。而系统性思维，是在这个基础之上，找到各个要素之间的关系，建立起一个整体的、动态的视角，让你能够看到整个事情背后的逻辑和演化方向。
+好，那具体该怎么做呢？
+第一步，从调节回路开始，描述系统
+上节课我们说过，一个系统是为了要实现某一个目标或者功能而存在的，而调节回路的作用，就是让系统稳定，或者达成某个目标，对吧？
+因此，系统图，一般可以从目标开始，先画一个调节回路。
+比如这个问题的目标，是：如何在未来三个月完成 100 万的销售业绩？
+但请问，这个对系统来说，这是一个正确的目标吗？
+不是，这是团队的一次短期任务。 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/20.%E7%B3%BB%E7%BB%9F%E6%80%A7%E6%80%9D%E7%BB%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%B8%A4%E7%A7%8D%E7%BB%93%E6%9E%84%E6%A8%A1%E5%9E%8B/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/20.%E7%B3%BB%E7%BB%9F%E6%80%A7%E6%80%9D%E7%BB%B4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E4%B8%A4%E7%A7%8D%E7%BB%93%E6%9E%84%E6%A8%A1%E5%9E%8B/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.396Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这节课我将从零开始，一步一步告诉你该如何进行系统性思维。
 一个最简单的系统
 首先，给你看一个最简单的系统是什么样子的。
 假设，你现在要洗个热水澡，于是，你打开了淋浴，开始调节水温…
-· 一开始啊，流出的水很凉，你想要把温度调高一些，因此，你
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
+· 一开始啊，流出的水很凉，你想要把温度调高一些，因此，你就向右转动了一下水温的调节阀…
+· 水温开始慢慢上升，但是不一会儿，你又感觉太烫了，想把温度给降下来，于是你又向左转动调节阀；
+· 水温开始下降，但是，过了没几秒，你又感觉太凉了，于是你再次向右转动调节阀…
+· 就这样，左一下，右一下，经过了很多次，你终于调到了一个舒服的温度。
+这个，就是一个最简单的系统，它是由「水温调节阀、现在的水温、体感温差、以及目标水温」这 4 个要素组合成的一个系统，你点开图文，可以看到一张示意图：
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/2.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%B0%81%E5%8D%B0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
+目标水温和当前水温的温差，会影响你调节水温的方向，而水温调节阀的转动方向，经过几秒钟的延迟，又会改变当前的水温，而当前的水温变了，你感受到的温差也就变了，这又会进一步改变你转动调节阀的方向。
+如此这般，直到体感温差为 0，也就是当前的水温达到了你的目标水温，那系统就会进入一种均衡状态，你不需要再调节水阀了。
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                从今天开始，我将通过这门课，来全方位升级你的大脑。
+好，我们把这个过 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/2.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%B0%81%E5%8D%B0/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/2.%E8%A7%A3%E5%BC%80%E4%BD%A0%E5%A4%A7%E8%84%91%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%B0%81%E5%8D%B0/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.388Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">从今天开始，我将通过这门课，来全方位升级你的大脑。
 从如何学习知识，到如何运用知识；从如何分析问题，到如何解决问题，我将会给你一整套大脑的操作手册，助你拥有不平凡的思考力！
-但是，在讲具体方法之前，我需要先为你的大脑做一件事情，那就是：解开
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/19.%E5%A6%82%E6%9E%9C%E4%BD%A0%E8%83%BD%E7%A9%BF%E8%B6%8A%EF%BC%8C%E7%8E%B0%E5%9C%A8%E4%BC%9A%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD%E5%90%97%EF%BC%9F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这节课我们开始讲第二模块「问题分析」的最后一个章节：系统性思维。
+但是，在讲具体方法之前，我需要先为你的大脑做一件事情，那就是：解开你大脑里的两道封印！
+什么意思？
+你有没有想过，
+面对同样的知识，为什么有些人学习的速度很快，而有些人却怎么也学不会？
+面对同样的问题，为什么有些人的脑洞特别大，而有些人，他的大脑里则是一片空白？
+面对同样的困境，为什么有些人能够淡定自若，而有些人却是惊慌失措？
+难道这真的是他们在智力上有差距吗？还是每个人的大脑，它构造不一样呢？
+都不是！
+那是因为，那些人的大脑上有两道封印没有被解开！
+他们大脑的潜能没有被释放出来。
+因此，重塑大脑的第一步，就是要先解开这两道藏在大脑里边的封印！
+这节课我们来说其中的第一道。
+解开大脑里的第一道封印
+你知道，人之所以能够击败其他所有动物，站上食物链的顶端，靠的是什么吗？
+不仅仅是我们能够制造并使用工具，更重要是，我们拥有：语言能力。
+语言，不仅让我们可以通过互相交流，来获得大规模的协作能力，语言也让我们学会了思考。 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/19.%E5%A6%82%E6%9E%9C%E4%BD%A0%E8%83%BD%E7%A9%BF%E8%B6%8A%EF%BC%8C%E7%8E%B0%E5%9C%A8%E4%BC%9A%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD%E5%90%97%EF%BC%9F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/19.%E5%A6%82%E6%9E%9C%E4%BD%A0%E8%83%BD%E7%A9%BF%E8%B6%8A%EF%BC%8C%E7%8E%B0%E5%9C%A8%E4%BC%9A%E5%8F%98%E5%BE%97%E6%9B%B4%E5%A5%BD%E5%90%97%EF%BC%9F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.381Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">这节课我们开始讲第二模块「问题分析」的最后一个章节：系统性思维。
 蝴蝶效应
 有一部经典的电影，叫做《蝴蝶效应》，不知道你看过吗？
 电影的剧情大致是这样的：男主拥有穿越时空的能力，他可以通过阅读自己的日记，回到过去，改变历史。
-因此，每当他对
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/18.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%E7%9A%84%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7%EF%BC%9A%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E6%B3%95/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上一节课我们介绍了结构化思维的一种基本形态：金字塔结构，它能让你的思维变得更加缜密。
+因此，每当他对现状感到不满意，或者遇到了重大的危机，他都会选择穿越到过去，试图去改变历史。
+但是，每次穿越回去，这个结果却都让他的现在变得更糟了。
+怎么会这样？
+明明有超能力，可以改变历史，对吧？这是多少人梦寐以求的能力啊，但为什么，这种能力无法让他的今天，按自己设想的方式，变得更好呢？
+因为，我们身处的，是一个混沌的世界！
+什么是混沌的世界？
+就是这个世界，太复杂了，很多事情，并不能做简单的因果归因，往往是你解决了 A 问题，却导致了 B 问题的发生。
+比如影片中，汤米变坏了，男主就想回到过去，劝说他好好做人，结果汤米是好好做人了，但是这也改变了他原来的人生轨迹，最终却导致了他的死亡…
+再比如，美国的次贷危机，原本房贷的要求很高，普通人很难贷到，投资银行为了解决这个问题，于是就把那些信用评级不高的贷款，通过层层的包装，变成了一种优质的资产出售，帮助他们拿到贷款。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/18.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%E7%9A%84%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7%EF%BC%9A%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E6%B3%95/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/18.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%E7%9A%84%E8%BF%9B%E9%98%B6%E6%8A%80%E5%B7%A7%EF%BC%9A%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E6%B3%95/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.373Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上一节课我们介绍了结构化思维的一种基本形态：金字塔结构，它能让你的思维变得更加缜密。
 但是，这种思维方式有一个缺点。
 就是整个过程需要耗费特别多的时间，你需要做头脑风暴，需要梳理逻辑，还要做到每一层分解都符合 MECE 原则，这些都不容易…
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
+那有没有什么更方便的方法呢？
+有的。今天我就给你介绍一套结构化思维的进阶技巧，来帮助你提高思考的效率，它叫做：平面切割法。
+什么是平面切割法？
+如果方便的话，请你拿出一张白纸，放在面前，想象在白纸上即将填满的内容，将形成一套完整的方案。
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/17.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%EF%BC%8C%E6%8B%A5%E6%9C%89%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80%E7%9A%84%E8%83%BD%E5%8A%9B/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
+然后你需要拿出一支笔，开始对这个还没有出现的方案，用贯穿的横线、竖线来进行切割，这样切出来的结构，它一定是 MECE 的，你点开图文，可以看到一张图示：
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                你好，这里是《不平凡的思考力》，我是谢春霖。
+这个很好理解，因为这本来就是一个整体嘛，肯定是无遗漏的；现在，用线条把它切开，那分开的部分，彼此一定是相互独立且不重叠的，对吧！
+那现在的问题是什么？就是这个线该怎么画？
+当然不能随便画，就像我们中国的汉字，一共有 10 万个左右，每个字都不一样，但是所有的汉字，都是通过「点、横、竖、撇、捺、折、弯、钩」这八个基本的笔画组合而成的。
+平面切割也一样，画线也有两 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/17.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%EF%BC%8C%E6%8B%A5%E6%9C%89%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80%E7%9A%84%E8%83%BD%E5%8A%9B/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/17.%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%EF%BC%8C%E6%8B%A5%E6%9C%89%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80%E7%9A%84%E8%83%BD%E5%8A%9B/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.364Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">你好，这里是《不平凡的思考力》，我是谢春霖。
 上节课我给介绍了什么是结构化思维。这节课，我们来讲如何拥有结构化思维。
 假设，有一天，你开车开到一半，突然抛锚了，车子发出了哄哄的巨响，请问，这是哪里出了问题？
-是轮胎？轴承？发动机？油箱？还是
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
+是轮胎？轴承？发动机？油箱？还是有只猫躲在车里边作怪？
+一辆汽车，有上万个零件，当汽车发生故障，如果你不是专业修车的，你根本不知道是哪个零件可能出现了问题，对吧？
+那怎么办？
+你只能一通乱试，但是你会发现完全没有用。所以，你只能叫来拖车，把它送到修理厂…
+好，到了修理厂，修车的师傅一看，说：「小问题，你稍等片刻…」
+然后你想，估计要等很久，我打一会儿王者荣耀吧，但是没想到，一局还没有打完，他就已经帮你修好了！
+什么！怎么会那么快？不是汽车有上万个零件吗？如果逐一排查，那至少也得一天啊，对吧？这还不算维修的时间，他是怎么做到的？
+因为…结构！
+在修车师傅的眼中，汽车并不是由上万个零件拼接而成的，它是「结构化」的。
+比如一辆车它有：动力传动系统；制动系统；转向系统；悬架系统；气囊和辅助系统；空调和暖风系统；附件及电器系统，等等，你点开图文，可以看到一张图示：
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/16.%E8%A1%A8%E8%BE%BE%E4%B8%8D%E8%A1%8C%EF%BC%8C%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%80%9D%E7%BB%B4%E6%B2%A1%E6%9C%89%E7%BB%93%E6%9E%84/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                你好，这里是《不平凡的思考力》，我是谢春霖。
+好，有了结构化的视角，师 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/16.%E8%A1%A8%E8%BE%BE%E4%B8%8D%E8%A1%8C%EF%BC%8C%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%80%9D%E7%BB%B4%E6%B2%A1%E6%9C%89%E7%BB%93%E6%9E%84/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/16.%E8%A1%A8%E8%BE%BE%E4%B8%8D%E8%A1%8C%EF%BC%8C%E6%98%AF%E5%9B%A0%E4%B8%BA%E6%80%9D%E7%BB%B4%E6%B2%A1%E6%9C%89%E7%BB%93%E6%9E%84/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.357Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">你好，这里是《不平凡的思考力》，我是谢春霖。
 这节课，我将帮你的思维从一维的线性思维上升到二维的结构化思维。
 在讲具体的方法之前，我先来给你做一个测试，下面我会说 20 个数字，请你尽可能的记住它们，不要用纸，就用你的脑子记。
-好，准备好了
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/15.%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E8%83%BD%E5%8A%9B%EF%BC%9F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上节课我们讲了建立逻辑的第一种思维方式，叫做：演绎法，今天我们讲第二种：归纳法。
+好，准备好了吗？
+「71438059269250741863」
+怎么样，记住了吗？
+请问，分别是哪 20 个数字？
+是不是有点难？
+好，我再来报一组，看你能不能记住？
+听好：「99887766554433221100」
+这次记住了吗？
+我相信这第二组数字，你听一遍就记住了。
+但其实，这 2 组里面的数字，都是一样的，只是顺序不同而已。
+那为什么第二组更容易记住呢？
+因为第二组更符合我们大脑的使用习惯，它有清晰的结构和逻辑。
+我们大脑处理信息有 2 个规律：
+第一，是太多的信息记不住；第二，是喜欢有规律的信息。
+比如你有没有遇到过这种情况，就是某个人和你讲了半天，他说的每个字你都听得懂，但是组合在一起，你就是不知道，他到底在说什么，内容没有重点，观点缺乏逻辑，听多了，你甚至会有点头疼，「啊~大哥，你到底想说什么呀？」
+你听着很难受，但其实，讲的人比你更难受！
+明明 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/15.%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E8%83%BD%E5%8A%9B%EF%BC%9F/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/15.%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E8%83%BD%E5%8A%9B%EF%BC%9F/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.349Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">上节课我们讲了建立逻辑的第一种思维方式，叫做：演绎法，今天我们讲第二种：归纳法。
 归纳法
 所谓归纳法，就是从「结果」出发，去寻找「原因」；通过观察、比对、分析，找到事物之间的因果关联的这样一个思维过程。
-比如上一章我们讲的「象、数、理」这个
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/14.%E4%B8%A5%E5%AF%86%E7%9A%84%E9%80%BB%E8%BE%91%EF%BC%8C%E6%98%AF%E4%B8%80%E5%88%87%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E5%9F%BA%E7%A1%80/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                现在，你已经进入到了专栏的第二个模块「问题分析」
+比如上一章我们讲的「象、数、理」这个分析框架，透过现象，看到背后的数字，然后找到数字变化背后的道理，这个用的就是归纳法，从现象这个结果出发，去找到导致这个现象的原因。
+但是，这里边有一个问题，就是你找到的这个原因，它是真正的原因吗？
+有一个故事是这样的：在一个火鸡饲养场里，一只火鸡，它发现，不管是晴天，还是下雨天，不管是天气热，还是天气冷，不管是星期三，还是星期四….总之，每天早上的 9 点钟，主人都会准时出现，并且会给它带来好吃的。
+于是，它就通过归纳法，得出了一个规律，那就是：「主人总是在上午 9 点钟，给我带来好吃的。」
+但是，随着时间来到了圣诞节的前一天，依然是上午 9 点钟，主人又出现了，但是这一次，他带来的不是食物，而是把它变成了食物…
+这个故事，是英国哲学家罗素提出的，被称为「罗素的火鸡」，它是用来讽刺那些信奉归纳法的人，他说很多人总是通过有限的观察，就得出了一个自以为正 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/14.%E4%B8%A5%E5%AF%86%E7%9A%84%E9%80%BB%E8%BE%91%EF%BC%8C%E6%98%AF%E4%B8%80%E5%88%87%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E5%9F%BA%E7%A1%80/" title="No title">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/%E4%B8%8D%E5%B9%B3%E5%87%A1%E7%9A%84%E6%80%9D%E8%80%83%E5%8A%9B%EF%BC%9A%E3%80%90%E8%81%AA%E6%98%8E%E3%80%91%E6%98%AF%E5%8F%AF%E4%BB%A5%E5%AD%A6%E4%BC%9A%E7%9A%84/14.%E4%B8%A5%E5%AF%86%E7%9A%84%E9%80%BB%E8%BE%91%EF%BC%8C%E6%98%AF%E4%B8%80%E5%88%87%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E7%9A%84%E5%9F%BA%E7%A1%80/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T09:35:17.341Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></span></div><div class="content">现在，你已经进入到了专栏的第二个模块「问题分析」
 上节课我给你介绍了一种分析问题的基本框架，叫做：透析三棱镜。
-但是，再好的分析框架，都需要有一套严密的逻辑作为保障，对吧？不然，你分析的结果就会经不起推敲，那么基于这个不靠谱的结论，你所做出
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                John Doe
-                                
-                            </span>
-                        </div>
-                    </div>
+但是，再好的分析框架，都需要有一套严密的逻辑作为保障，对吧？不然，你分析的结果就会经不起推敲，那么基于这个不靠谱的结论，你所做出的任何决策，都可能就会给你带来巨大的损失。
+有逻辑的思维，是一切分析方法的基础，它就好比是你造房子时候用的水泥，没有水泥，那砖块与砖块之间就连接不到一起，对吧？那么你造的房子就会变成一个豆腐渣工程，一推就会倒。
+那，怎么提升自己的逻辑思维能力呢？
+首先，我们来看一下什么是逻辑思维。
+什么是逻辑思维
+在第三章，就是讲如何提升思考能力的时候，我们说过，学习是靠连接完成。 
+比如小时候，我们是怎么学习汉字的？
+就是我们会将某个事物，对应到某一个汉字，然后再对应到某一个读音， 对吧？
+这样，你就知道这个汉字该怎么读，它代表什么意思了，你点开图文，可以看到一张图示：
 
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/5/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">6 / 7</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/7/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+没有这些图片或者实物与文字、与读音的一一对应，你就学不会汉字…所以，学习是靠连接完成的。
+那什么是逻辑思维呢？
+逻辑思维，就是你建立的这个连接，它是有因果关系。
+比如说，《论语》中有一句话，叫做 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/5/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/7/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">65</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/9.%E4%B8%8D%E4%B8%BA%E6%8B%96%E5%BB%B6%E6%89%BE%E5%80%9F%E5%8F%A3%EF%BC%8C%E5%8F%AA%E4%B8%BA%E8%87%AA%E5%BE%8B%E6%89%BE%E6%96%B9%E6%B3%95/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.807Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/8.%E5%8F%8A%E6%97%B6%E8%A1%8C%E5%8A%A8%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E5%BD%BB%E5%BA%95%E6%A0%B9%E6%B2%BB%E4%BD%A0%E7%9A%84%E6%8B%96%E5%BB%B6%E7%97%87/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.789Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/7.%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E8%AE%A1%E5%88%92%E6%80%BB%E6%98%AF%E5%AE%8C%E4%B8%8D%E6%88%90/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.781Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/5.%E5%85%AD%E6%AD%A5%E6%B3%95%E5%88%99%EF%BC%9A%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%B8%89%E4%B8%AA%E6%9C%88%E8%80%83%E4%B8%8A%E5%8C%97%E5%A4%A7%E7%9A%84/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.773Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2021/12/16/%E5%A5%BD%E5%A5%BD%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BA%B2%E8%AF%81%E6%9C%89%E6%95%88%E7%9A%84%E6%88%90%E7%BB%A9%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87%E6%96%B9%E6%B3%95/4.%E6%8F%90%E5%8F%96%E7%BB%83%E4%B9%A0%EF%BC%8C%E8%BF%99%E6%89%8D%E6%98%AF%E5%AF%B9%E4%BB%98%E8%80%83%E8%AF%95%E7%9A%84%E7%BB%88%E6%9E%81%E6%AD%A6%E5%99%A8/" title="No title">No title</a><time datetime="2021-12-16T09:35:17.766Z" title="Created 2021-12-16 17:35:17">2021-12-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">December 2021</span><span class="card-archive-list-count">65</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">65</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-12-28T18:05:15.370Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
